@@ -1,0 +1,114 @@
+/* Fonts to include */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* All non-stylized text */
+body {
+    font-family: "Lato";
+    font-size: 12pt;
+    color: #666;
+}
+
+/* Sizing of the paper */
+#resume {
+    width: 8.5in;
+    padding: 0.4in 0.4in 0.4in 0.4in;
+}
+
+/* Width of the left column */
+.left {
+    width: 5.2in;
+}
+
+/* Width of the right column */
+.right {
+    width: 5.0in;
+}
+
+/* Name of the resume owner */
+#name {
+    font-family: "Montserrat";
+    font-size: 32pt;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Description below the resume owner*/
+#description {
+    color: #111;
+    font-family: "Lato";
+    font-size: 14pt;
+}
+
+/* Pronouns and description below resume owner name */
+#pronouns {
+    font-family: "Lato";
+    font-size: 14pt;
+}
+
+/* Contact info in top right of resume */
+#contact {
+    line-height: 1.5em;
+    color: #222222;
+}
+
+/* Phone number of resume owner */
+#phone {
+    font-weight: bold;
+}
+
+/* Section headings */
+.header2 {
+    font-family: "Lato";
+    color: #1f5ab3;
+    font-size: 14pt;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Title of each experience */
+.title {
+    font-size: 13pt;
+    color: #222;
+    font-weight: bold;
+    font-family: "Montserrat";
+}
+
+/* Time span of jobs */
+.time {
+    font-size: 10pt;
+    color: #666;
+    font-weight: normal;
+}
+
+/* Company job is from */
+.company {
+    margin-top: 0.1em;
+    font-size: 12pt;
+    color: #666;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+/* Contact name at end of experience description */
+.contact {
+    color: #222;
+}
+
+/* References in bottom right */
+.reference {
+    margin-bottom: 0.5em;
+    color: #222;
+}
+
+/* Contact phone or email of references */
+.reference>strong {
+    color: #111;
+}
+
+/* Spacing between experiences */
+.experience {
+    margin-bottom: 0.1in;
+}

@@ -1,0 +1,72 @@
+/* These css rules are default and shouldn't be changed*/
+#error {
+    font-size:3em;
+    color:#880000;
+}
+table {
+    vertical-align:top;
+}
+td {
+    vertical-align:top;
+    padding: 0.2in 0.2in 0 0.2in;
+    box-sizing:border-box;
+}
+body {
+    margin:0 0 20vh 0;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+    overflow-x:hidden;
+}
+#instructions {
+    width:50vw;
+}
+#resume {
+    margin: auto;
+    display:table;
+    border: solid 2px black;
+    box-sizing:content-box;
+    align-items:flex-end;
+}
+@media print {
+    #resume {
+        width:100%;
+        box-sizing:border-box;
+        margin:0;
+        padding:0;
+        border: 0;
+    }
+    body {
+        margin:0;
+    }
+}
+#contact {
+    text-align:right;
+}
+.hidden {
+    background:#DDD;
+}
+@media print {
+    .hidden {
+        display:none;
+    }
+}
+.time {
+    vertical-align:center;
+}
+.company {
+    display:block;
+}
+.contact {
+    color:#222;
+}
+.desc:before {
+    /*tab character*/
+    content:"\0000a0\0000a0\0000a0\0000a0";
+}
+.desc:after {
+        content:"\0000a0\0000a0";
+}

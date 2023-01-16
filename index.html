@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="format.css">
+        <link rel="stylesheet" type="text/css" href="default.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <title>Resume</title>
+    </head>
+
+    <body>
+        <div id="instructions" class="hidden">
+            <h2>Instructions</h2>
+            Left click on any experience to toggle hidden<br>
+            Right click to move it up within the category list<br>
+
+            Right click on description to cycle it<br>
+
+            Contacts are automatically updated<br>
+
+            Hit "Ctrl + P" to print
+
+        </div>
+        <div id="error"><noscript>Please enable JavaScript</noscript></div>
+        <table id="resume" class="resume">
+            <tr>
+                <td class="left">
+                    <div id="name"></div>
+                    <span id="pronouns"></span>
+                    <span id="description" oncontextmenu="event.preventDefault();cycleDescription()"><span
+                              class='hidden'>No Description</span></span>
+                </td>
+                <td id="contact" class="right">
+                    <div id="city"></div>
+                    <div id="address"></div>
+                    <div id="phone"></div>
+                    <div id="email"></div>
+                    <div id="other"></div>
+                </td>
+            </tr>
+            <tr>
+                <td id="left" class="left">
+                </td>
+                <td id="right" class="right">
+                </td>
+            </tr>
+        </table>
+    </body>
+    <script src="resume.js"></script>
+    <script src="generator.js"></script>
+
+</html>
